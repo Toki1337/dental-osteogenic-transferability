@@ -1,0 +1,29 @@
+accession	role	cell_type	organism	platform	modality	n_samples	year	include_in_rra	is_external_validation	status	notes
+GSE99958	success_dental	PDLSC	human	rnaseq	mrna	8	2018	yes	no	verified	PDLSC osteogenic transcriptome; clean osteo-vs-ctrl candidate
+GSE163354	success_dental	PDLSC	human	rnaseq	mrna	20	2021	no	no	verified	SDF-1/Exendin-4 osteo; statistical anchor; subset osteo arms in Step0
+GSE226347	success_dental	DPSC	human	rnaseq	mrna	12	2024	yes	no	verify_arm	DPSC-ECM Wnt/Hippo; CONFIRM recipient cell per arm before inclusion
+GSE296018	success_dental	DPSC	human	rnaseq	mrna	6	2026	no	no	verified	Cuscuta total flavonoid x osteo; take osteo-direction arms
+GSE271641	success_dental	DPSC	human	rnaseq	mrna	6	2025	no	no	verified	CBD odonto/osteo; carve out osteogenic arm
+GSE299041	success_dental	DPSC	human	rnaseq	mrna	6	2025	no	no	verified	Shear stress / p38 osteogenic
+GSE286540	success_dental	SCAP	human	rnaseq	mrna	6	2025	no	no	verified	Simvastatin osteo; SCAP rare, high value
+GSE236009	success_dental	PDLSC	human	rnaseq	mrna	6	2025	no	no	verified	Cald1 regulates PDLSC osteogenesis
+GSE266150	success_dental	PDLSC	human	rnaseq	mrna	8	2024	no	no	verified	Naringenin NO-cGMP-PKG osteo; hold as validation
+GSE159507	success_dental	PDLSC	human	array	mrna	6	2020	no	no	verified	PDLSC osteo mRNA/lncRNA array; cross-platform RRA weight
+GSE159508	success_dental	PDLSC	human	array	ncrna	6	2020	no	no	verified	miRNA array; miRNA-mRNA side evidence only, not in mRNA RRA
+GSE266257	success_dental	SHED	human	rnaseq	mrna	4	2026	yes	no	verified	SHED inorganic phosphate mineralization (alizarin red confirmed)
+GSE49007	success_dental	DFC	human	array	mrna	4	2013	yes	no	verified	Dental follicle cells D7 osteo; rare DFC source, low cross-platform weight
+GSE316449	external_validation	PDLF	human	rnaseq	mrna	8	2026	no	yes	verified	alpha-KG H3K27me3 osteogenic; EXTERNAL validation set (not RRA training)
+GSE316447	external_validation	PDLF	human	atac	chromatin	8	2026	no	yes	verified	alpha-KG ATAC; epigenetic external validation, pairs with GSE316449
+GSE160451	neg_control	DPSC	human	rnaseq	mrna	6	2022	no	no	verified	ETV2 overexpression lineage reprogramming; NEGATIVE control, exclude from RRA
+GSE105145	anchor	DPSC_vs_BMSC	human	rnaseq	mrna	6	2019	no	no	verified	DPSC vs iliac BMSC baseline; cross-source anchor (position context)
+GSE104473	success_jaw	mandible_DO	mouse	rnaseq_atac	mrna_chromatin	51	2018	no	no	verified	Mandible distraction osteogenesis RNA-seq+ATAC; PRIMARY success-side cross-context reference
+GSE223778	success_jaw	socket_healing	human_mouse	rnaseq	mrna	12	2023	no	no	verified	Extraction socket healing Mertk; second success side (incl human)
+GSE7116	failure	MM_ONJ_blood	human	array	mrna	26	2007	no	no	confound	MM patients with ONJ; NO healthy ctrl, MM/chemo confound; SUPPORTIVE only
+GSE303003	failure	MRONJ_granulation_sc	human	scrnaseq	mrna	2	2025	no	no	small_scoop	MRONJ vs radicular cyst scRNA; n small; scoop risk; MECHANISTIC illustration only
+GSE269255	failure	ORNJ_mandible_sc	mouse	scrnaseq	mrna_metab	3	2024	no	no	verified	Irradiated mandibular stromal cells scRNA+metabolome (taurine); ORNJ failure side
+GSE295106	failure	BRONJ_mandible_sc	mouse	scrnaseq	mrna	4	2025	no	no	verified	Mandibular marrow ctrl vs BRONJ scRNA; PRIMARY mouse failure side (has control)
+GSE296096	failure	rescue_GGOH	mouse	rnaseq	mrna	9	2026	no	no	verified	GGOH overcomes N-BP toxicity; rescue-axis orthogonal support
+GSE306512	failure	rescue_mito	mouse	rnaseq	mrna	6	2026	no	no	verified	Macrophage mitochondria rescue prevents ONJ; rescue-axis support
+GSE58474	position	mandible_vs_iliac_OB	human	array	mrna	12	2014	no	no	verified	Mandibular vs iliac osteoblasts; jaw osteogenic weakness primary evidence
+GSE30167	position	jaw_vs_longbone	mouse	array	mrna	4	2011	no	no	verified	Jaw/alveolar vs long bone; cross-species position context
+DRA006607	position	maxilla_mandible_ilium_MSC	human	rnaseq_raw	mrna	NA	2018	no	no	verified_sra	Position memory MSC; NCBI SRA uid 10220584; RAW fastq, needs alignment/quant

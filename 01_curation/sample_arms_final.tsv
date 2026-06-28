@@ -1,0 +1,33 @@
+accession	role	cell_type	organism	gsm	title	description	proposed_group	final_group	arm_clean	reviewer_note
+GSE99958	success_dental	PDLSC	human	PDLC	periodontal ligament cells, undifferentiated	growth medium, day 0	control	control	yes	clean osteo-induction-vs-undifferentiated; RNA-seq supplementary counts (series matrix empty)
+GSE99958	success_dental	PDLSC	human	PDLC-D3	PDLC osteogenic day 3	osteogenic induction medium, day 3	osteo	osteo	yes	clean osteo arm
+GSE99958	success_dental	PDLSC	human	PDLC-D7	PDLC osteogenic day 7	osteogenic induction medium, day 7	osteo	osteo	yes	clean osteo arm
+GSE99958	success_dental	PDLSC	human	PDLC-D14	PDLC osteogenic day 14	osteogenic induction medium, day 14	osteo	osteo	yes	clean osteo arm (note: only n=1 undifferentiated control)
+GSE226347_DPSC	success_dental	DPSC	human	N_DPSCs1	DPSC normal/growth medium rep1	growth medium (N)	control	control	yes	clean growth-vs-osteogenic medium; DPSC arm split from GSE226347
+GSE226347_DPSC	success_dental	DPSC	human	N_DPSCs2	DPSC normal/growth medium rep2	growth medium (N)	control	control	yes	clean control arm
+GSE226347_DPSC	success_dental	DPSC	human	N_DPSCs3	DPSC normal/growth medium rep3	growth medium (N)	control	control	yes	clean control arm
+GSE226347_DPSC	success_dental	DPSC	human	OM_DPSCs1	DPSC osteogenic medium rep1	osteogenic medium (OM)	osteo	osteo	yes	clean osteo arm
+GSE226347_DPSC	success_dental	DPSC	human	OM_DPSCs2	DPSC osteogenic medium rep2	osteogenic medium (OM)	osteo	osteo	yes	clean osteo arm
+GSE226347_DPSC	success_dental	DPSC	human	OM_DPSCs3	DPSC osteogenic medium rep3	osteogenic medium (OM)	osteo	osteo	yes	clean osteo arm
+GSE226347_GSC	success_dental	GSC	human	N_GSCs1	gingival stem cell normal medium rep1	growth medium (N)	control	control	yes	gingival-stem-cell arm split from GSE226347; clean growth-vs-osteo
+GSE226347_GSC	success_dental	GSC	human	N_GSCs2	gingival stem cell normal medium rep2	growth medium (N)	control	control	yes	clean control arm
+GSE226347_GSC	success_dental	GSC	human	N_GSCs3	gingival stem cell normal medium rep3	growth medium (N)	control	control	yes	clean control arm
+GSE226347_GSC	success_dental	GSC	human	OM_GSCs1	gingival stem cell osteogenic medium rep1	osteogenic medium (OM)	osteo	osteo	yes	clean osteo arm (GSC mounts near-null osteo response: 0 DEGs, retained transparently)
+GSE226347_GSC	success_dental	GSC	human	OM_GSCs2	gingival stem cell osteogenic medium rep2	osteogenic medium (OM)	osteo	osteo	yes	clean osteo arm
+GSE226347_GSC	success_dental	GSC	human	OM_GSCs3	gingival stem cell osteogenic medium rep3	osteogenic medium (OM)	osteo	osteo	yes	clean osteo arm
+GSE266257	success_dental	SHED	human	S1_rep1	SHED control (S1) rep1	control, no inorganic phosphate	control	control	yes	clean control-vs-Pi-mineralization (alizarin-red confirmed)
+GSE266257	success_dental	SHED	human	S1_rep2	SHED control (S1) rep2	control, no inorganic phosphate	control	control	yes	clean control arm
+GSE266257	success_dental	SHED	human	S4_rep1	SHED inorganic-phosphate (S4) rep1	inorganic phosphate mineralization	osteo	osteo	yes	clean osteo arm
+GSE266257	success_dental	SHED	human	S4_rep2	SHED inorganic-phosphate (S4) rep2	inorganic phosphate mineralization	osteo	osteo	yes	clean osteo arm
+GSE49007	success_dental	DFC	human	DFC_ctrl_1	dental follicle cells control rep1	undifferentiated control	control	control	yes	clean control-vs-differentiation; microarray (low cross-platform RRA weight, equal-weight rank vote)
+GSE49007	success_dental	DFC	human	DFC_ctrl_2	dental follicle cells control rep2	undifferentiated control	control	control	yes	clean control arm
+GSE49007	success_dental	DFC	human	DFC_diff_1	dental follicle cells differentiated rep1	osteogenic differentiation	osteo	osteo	yes	clean osteo arm
+GSE49007	success_dental	DFC	human	DFC_diff_2	dental follicle cells differentiated rep2	osteogenic differentiation	osteo	osteo	yes	clean osteo arm
+GSE163354	success_dental	PDLSC	human	(whole series)	SDF-1 / Exendin-4 osteogenic	drug-stimulated osteogenesis, no uninduced arm	exclude	exclude	no	EXCLUDED: drug (SDF-1/Exendin-4) x osteogenesis with no pure uninduced control arm
+GSE296018	success_dental	DPSC	human	(whole series)	Cuscuta total flavonoid x osteo	compound x osteogenesis	exclude	exclude	no	EXCLUDED: flavonoid x osteogenesis, no clean uninduced control
+GSE271641	success_dental	DPSC	human	(whole series)	cannabidiol odonto/osteogenic	drug x differentiation	exclude	exclude	no	EXCLUDED: CBD x differentiation, confounded
+GSE299041	success_dental	DPSC	human	(whole series)	shear stress / p38 osteogenic	mechano/pathway perturbation x osteo	exclude	exclude	no	EXCLUDED: shear-stress/p38 perturbation x osteogenesis, no clean uninduced arm
+GSE286540	success_dental	SCAP	human	(whole series)	simvastatin osteogenic	drug x osteogenesis	exclude	exclude	no	EXCLUDED: simvastatin x osteogenesis, no pure uninduced control
+GSE236009	success_dental	PDLSC	human	(whole series)	Cald1 knockdown osteogenesis	genetic perturbation x osteo	exclude	exclude	no	EXCLUDED: Cald1 knockdown x osteogenesis (genetic perturbation)
+GSE266150	success_dental	PDLSC	human	(whole series)	naringenin NO-cGMP-PKG osteo	drug x osteogenesis, no group labels	exclude	exclude	no	EXCLUDED: naringenin x osteogenesis; sample group labels absent
+GSE159507	success_dental	PDLSC	human	(whole series)	PDLSC osteogenic mRNA/lncRNA array	microarray, platform lacked usable gene-symbol annotation	exclude	exclude	no	EXCLUDED: GPL lacked AnnotGPL gene symbols; recoverable via biomaRt as a future 6th dataset

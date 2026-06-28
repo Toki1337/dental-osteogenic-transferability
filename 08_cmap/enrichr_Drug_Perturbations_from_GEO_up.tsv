@@ -1,0 +1,41 @@
+Term	Overlap	P.value	Adjusted.P.value	library
+dexamethasone DB01234 human GSE34313 sample 3169	57/286	3.42813125080424e-42	3.09903065072703e-39	Drug_Perturbations_from_GEO_up
+cediranib 9933475 human GSE32569 sample 2642	45/299	7.29559821883027e-28	3.29761039491128e-25	Drug_Perturbations_from_GEO_up
+lipopolysaccharide 11970143 human GSE40885 sample 2475	45/325	2.73320601488474e-26	8.23606079151935e-24	Drug_Perturbations_from_GEO_up
+ubiquinol 9962735 human GSE21351 sample 3448	41/281	6.48937477058769e-25	1.46659869815282e-22	Drug_Perturbations_from_GEO_up
+IFN-alphacon1 DB05258 human GSE5542 sample 2474	42/313	4.87182225389976e-24	8.80825463505077e-22	Drug_Perturbations_from_GEO_up
+Lipopolysaccharide 11970143 human GSE5504 sample 3485	48/428	6.89294607267695e-24	1.03853720828333e-21	Drug_Perturbations_from_GEO_up
+Interferon beta-1a DB00060 human GSE26104 sample 3187	46/394	1.1748142517033e-23	1.49531516207221e-21	Drug_Perturbations_from_GEO_up
+Lipopolysaccharide 11970143 human GSE5504 sample 3486	45/376	1.3232877540462e-23	1.49531516207221e-21	Drug_Perturbations_from_GEO_up
+Interferon beta-1a DB00060 human GSE26104 sample 3188	44/366	3.55718047018197e-23	3.57299016116056e-21	Drug_Perturbations_from_GEO_up
+dexamethasone DB01234 human GSE34313 sample 2714	40/303	1.15486317516501e-22	1.04399631034917e-20	Drug_Perturbations_from_GEO_up
+soman 7305 rat GSE13428 sample 2633	50/500	1.30235716099264e-22	1.07030079412486e-20	Drug_Perturbations_from_GEO_up
+Lipopolysaccharide 11970143 human GSE5504 sample 3484	46/418	1.42132570054735e-22	1.07073202774567e-20	Drug_Perturbations_from_GEO_up
+quercetin 5280343 human GSE13899 sample 3182	40/307	1.89580720246933e-22	1.31831516233252e-20	Drug_Perturbations_from_GEO_up
+Interferon beta-1a DB00060 human GSE26104 sample 3186	45/419	1.14975118877033e-21	7.42410767605983e-20	Drug_Perturbations_from_GEO_up
+Interferon-&Icirc;&sup2;-1b (Betaferon) DB00068 human GSE26104 sample 3343	42/370	3.42514604571759e-21	2.06422135021913e-19	Drug_Perturbations_from_GEO_up
+soman 7305 rat GSE13428 sample 2632	47/476	4.63034288910929e-21	2.61614373234675e-19	Drug_Perturbations_from_GEO_up
+Lipopolysaccharide 11970143 human GSE3140 sample 3594	40/335	4.95247823603132e-21	2.63355313257195e-19	Drug_Perturbations_from_GEO_up
+IFN-alphacon1 DB05258 human GSE5542 sample 2473	41/356	6.07017435694102e-21	3.04857645481927e-19	Drug_Perturbations_from_GEO_up
+dexamethasone DB01234 mouse GSE7683 sample 3524	41/370	2.57694726101414e-20	1.22608438102988e-18	Drug_Perturbations_from_GEO_up
+type II IFN (IFN-gamma1b) DB00033 human GSE5542 sample 2477	36/279	3.74652085400921e-20	1.69342742601216e-18	Drug_Perturbations_from_GEO_up
+soman 7305 rat GSE13428 sample 2635	46/483	5.44257519138997e-20	2.34289903476978e-18	Drug_Perturbations_from_GEO_up
+hydrocortisone DB00741 human GSE7890 sample 2751	37/305	9.27016002419471e-20	3.80919302812365e-18	Drug_Perturbations_from_GEO_up
+Lipopolysaccharide 11970143 human GSE3140 sample 3595	38/330	1.78784337515849e-19	7.02700178757944e-18	Drug_Perturbations_from_GEO_up
+bleomycin DB00290 mouse GSE43695 sample 3104	36/311	1.4156989788585e-18	5.33246615370035e-17	Drug_Perturbations_from_GEO_up
+nicotinamide riboside 439924 mouse GSE62194 sample 3471	30/230	4.18274695793488e-17	1.51248129998925e-15	Drug_Perturbations_from_GEO_up
+formaldehyde 712 rat GSE7002 sample 3543	34/313	9.55685508844822e-17	3.32284499998353e-15	Drug_Perturbations_from_GEO_up
+bleomycin DB00290 mouse GSE43695 sample 3106	36/367	3.02513670559974e-16	1.01286058587487e-14	Drug_Perturbations_from_GEO_up
+decitabine DB01262 human GSE9118 sample 2703	31/271	5.34661583755262e-16	1.72619311326699e-14	Drug_Perturbations_from_GEO_up
+ethanol 702 human GSE44456 sample 3038	32/300	1.34628554051044e-15	4.19669699524633e-14	Drug_Perturbations_from_GEO_up
+soman 7305 rat GSE13428 sample 2640	42/532	2.14138312962806e-15	6.45270116394588e-14	Drug_Perturbations_from_GEO_up
+fluticasone 5311101 human GSE15823 sample 3090	34/351	3.07615414043108e-15	8.97046239661193e-14	Drug_Perturbations_from_GEO_up
+azathioprine DB00993 human GSE38713 sample 3194	34/361	7.09579574215435e-15	2.0045622971586e-13	Drug_Perturbations_from_GEO_up
+soman 7305 rat GSE13428 sample 2638	37/441	1.68807122740648e-14	4.62429208962259e-13	Drug_Perturbations_from_GEO_up
+dexamethasone DB01234 mouse GSE7683 sample 2712	29/268	2.09305500757366e-14	5.56506390248996e-13	Drug_Perturbations_from_GEO_up
+Interferon beta-1b DB00068 human GSE26104 sample 3185	32/333	2.6091358076022e-14	6.57776615904372e-13	Drug_Perturbations_from_GEO_up
+PRISTANE 15979 mouse GSE17297 sample 3229	30/291	2.69196385903082e-14	6.57776615904372e-13	Drug_Perturbations_from_GEO_up
+cisplatin DB00515 human GSE47856 sample 3155	31/312	2.70821786874958e-14	6.57776615904372e-13	Drug_Perturbations_from_GEO_up
+decitabine 451668 mouse GSE4768 sample 3103	28/251	2.76499019959802e-14	6.57776615904372e-13	Drug_Perturbations_from_GEO_up
+BPDE 41322 human GSE19510 sample 3377	31/326	8.94690800476296e-14	2.07384739392454e-12	Drug_Perturbations_from_GEO_up
+Lipopolysaccharide 11970143 human GSE5504 sample 3483	37/468	1.06518285996308e-13	2.40731326351656e-12	Drug_Perturbations_from_GEO_up

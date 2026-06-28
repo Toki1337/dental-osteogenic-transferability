@@ -1,0 +1,6 @@
+id	n_ctrl	n_osteo	n_genes	n_DEG	kind
+GSE99958	1	3	23200	458	count
+GSE226347_DPSC	3	3	19422	30	count
+GSE226347_GSC	3	3	19328	0	count
+GSE266257	2	2	16478	1048	count
+GSE49007	2	2	19733	540	array

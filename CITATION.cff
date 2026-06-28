@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "A reproducible pan-dental-source in-vitro osteogenic program and a human single-cell audit of its in-vivo transferability in jaw regeneration and MRONJ"
+abstract: >-
+  Reproducible public-data analysis package: an in-vitro osteogenic-induction
+  signature distilled by robust rank aggregation across five dental mesenchymal
+  stromal cell sources (744 leave-one-out-stable genes, 52-gene WGCNA core), and a
+  human single-cell audit (GSE303003, 4 MRONJ vs 4 controls) showing the program is
+  neither suppressed in MRONJ nor localized to in-vivo osteoprogenitors. Includes an
+  exploratory druggable-genome Mendelian randomization and connectivity-map repurposing
+  layer that nominates no robust target. Take-home: in-vitro transcriptomic
+  reproducibility does not imply in-vivo cellular correspondence.
+type: software
+authors:
+  - family-names: Dou
+    given-names: Wendi
+    orcid: "https://orcid.org/0009-0008-2815-3726"
+    affiliation: "Institute of Dentistry, I.M. Sechenov First Moscow State Medical University (Sechenov University), Moscow, Russia"
+repository-code: "https://github.com/Toki1337/dental-osteogenic-transferability-audit"
+license: MIT
+keywords:
+  - dental mesenchymal stem cells
+  - osteogenic differentiation
+  - robust rank aggregation
+  - WGCNA
+  - single-cell RNA-seq
+  - MRONJ
+  - in-vivo transferability
+  - Mendelian randomization
+  - public-data resource

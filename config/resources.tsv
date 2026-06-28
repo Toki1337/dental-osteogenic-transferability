@@ -1,0 +1,17 @@
+resource	type	role	url_or_id	notes
+eBMD_GWAS	gwas	mr_exposure_outcome	GWAS Catalog GCST006979 (Morris & Kemp 2019 Nat Genet)	heel eBMD UK Biobank, ~1100 loci; outcome/exposure for MR
+GEFOS_DXA_BMD	gwas	mr_replication	http://www.gefos.org/	DXA femoral-neck/lumbar-spine BMD; replication
+FinnGen_fracture	gwas	mr_outcome_repl	FinnGen R10 endpoints (M13_FRACTURE etc.)	fracture/osteoporosis endpoints; FinnGen replication
+eQTLGen_blood	eqtl	mr_instrument	https://www.eqtlgen.org/ (cis-eQTL, n=31684)	cis-eQTL instruments for druggable genes
+GTEx_v8	eqtl	mr_instrument_tissue	https://gtexportal.org/	tissue eQTL incl bone-adjacent; secondary instruments
+druggable_genome	annotation	druggability_filter	Finan 2017 Sci Transl Med (Tier 1-3)	druggable gene list to intersect failure-specific nodes
+OpenTargets	annotation	target_drug_map	https://platform.opentargets.org/	target-disease-drug evidence
+DGIdb	annotation	drug_gene_interaction	https://dgidb.org/	drug-gene interactions
+ChEMBL	annotation	target_compound	https://www.ebi.ac.uk/chembl/	target/compound bioactivity
+CMap_LINCS_L1000	perturbation	repurposing_query	https://clue.io/	L1000 connectivity query (account required)
+L1000CDS2	perturbation	repurposing_query	https://maayanlab.cloud/L1000CDS2/	signature reverse-search (free API)
+L1000FWD	perturbation	repurposing_query	https://maayanlab.cloud/L1000FWD/	signature visualization/reverse-search
+MSigDB_osteo	geneset	enrichment_ssgsea	GOBP_OSTEOBLAST_DIFFERENTIATION, HALLMARK sets	ssGSEA/GSEA gene sets
+WikiPathways_bone	geneset	enrichment	WP bone formation pathways	functional annotation
+STRING_v12	ppi	network_hub	https://string-db.org/	PPI network for WGCNA hub extraction
+DrugBank	annotation	drug_target_anno	https://go.drugbank.com/	approved-drug target annotation, local-delivery feasibility

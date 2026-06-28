@@ -1,0 +1,3 @@
+gene	lead_snp_wald_padj	ivw_p	ivw_nsnp	egger_intercept_p	druggable	in_core	signature_dir	verdict
+GREM2	0.000636	0.287	3	5.8e-11	TRUE	TRUE	down	EXCLUDED: lead-SNP signal is a directional-pleiotropy artifact (Egger intercept p=5.8e-11); multi-SNP IVW null
+SRGN	0.039	0.002	2	NA	TRUE	TRUE	up	WEAK/NON-ROBUST: survives both methods but b=-0.02, direction-discordant, only 2 instruments (no pleiotropy test)

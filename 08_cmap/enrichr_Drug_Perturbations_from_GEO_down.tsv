@@ -1,0 +1,41 @@
+Term	Overlap	P.value	Adjusted.P.value	library
+hydrocortisone DB00741 human GSE7890 sample 2751	55/295	2.42452923244462e-37	2.16995366303794e-34	Drug_Perturbations_from_GEO_down
+dexamethasone DB01234 human GSE34313 sample 2714	43/297	1.15359949366114e-24	5.16235773413359e-22	Drug_Perturbations_from_GEO_down
+ascorbic acid 54670067 human GSE11919 sample 3190	36/287	1.07725466700208e-18	3.2138097565562e-16	Drug_Perturbations_from_GEO_down
+dexamethasone DB01234 human GSE34313 sample 3169	35/314	1.43182259356399e-16	2.82777205118835e-14	Drug_Perturbations_from_GEO_down
+Ascorbyl-2-phosphate 54679073 human GSE11919 sample 3191	34/296	1.57976092245159e-16	2.82777205118835e-14	Drug_Perturbations_from_GEO_down
+VX 39793 human GSE33606 sample 3376	37/367	5.00304512799778e-16	7.46287564926335e-14	Drug_Perturbations_from_GEO_down
+formoterol DB00983 human GSE30242 sample 2631	34/315	1.05230581812805e-15	1.34544815317801e-13	Drug_Perturbations_from_GEO_down
+alfacalcidol 5282181 human GSE15947 sample 3363	34/334	6.10190279691942e-15	6.8265037540536e-13	Drug_Perturbations_from_GEO_down
+PLX4032 DB05238 human GSE24862 sample 2568	33/318	8.90384792811416e-15	8.85438210629131e-13	Drug_Perturbations_from_GEO_down
+dexamethasone DB01234 human GSE54608 sample 3093	33/322	1.27930504637717e-14	1.14497801650757e-12	Drug_Perturbations_from_GEO_down
+metformin DB00331 human GSE33612 sample 2483	32/343	4.41864980119304e-13	3.59517415642525e-11	Drug_Perturbations_from_GEO_down
+Vitamin D3 DB00136 human GSE5145 sample 3170	30/308	8.05621398655392e-13	6.00859293163813e-11	Drug_Perturbations_from_GEO_down
+alfacalcidol 5282181 human GSE15947 sample 3364	30/324	2.96703598455554e-12	2.04269015859785e-10	Drug_Perturbations_from_GEO_down
+Phosgene 6371 mouse GSE2565 sample 3616	29/306	3.89007792196412e-12	2.48687124296992e-10	Drug_Perturbations_from_GEO_down
+Y15 23627197 human GSE43452 sample 2554	24/210	5.63613101413891e-12	3.36289150510288e-10	Drug_Perturbations_from_GEO_down
+Phosgene 6371 mouse GSE2565 sample 3617	29/324	1.59249262796949e-11	8.90800563770435e-10	Drug_Perturbations_from_GEO_down
+cisplatin DB00515 mouse GSE6206 sample 2692	27/307	1.21451874126103e-10	6.39408396134481e-09	Drug_Perturbations_from_GEO_down
+VX 39793 human GSE33606 sample 3345	30/380	1.58263717198957e-10	7.86922371628147e-09	Drug_Perturbations_from_GEO_down
+estradiol 5757 human GSE24592 sample 3344	26/290	1.77574710427412e-10	8.36470346487018e-09	Drug_Perturbations_from_GEO_down
+cisplatin DB00515 mouse GSE6206 sample 3412	27/321	3.3093826804412e-10	1.48094874949744e-08	Drug_Perturbations_from_GEO_down
+decitabine 451668 mouse GSE4768 sample 3105	26/313	9.27829861208848e-10	3.95432250372342e-08	Drug_Perturbations_from_GEO_down
+BPDE 41322 human GSE19510 sample 3378	23/248	1.05705019882602e-09	4.30027239976948e-08	Drug_Perturbations_from_GEO_down
+1,25 dihydroxyvitamin D 5280453 human GSE15947 sample 2493	24/271	1.16095735333103e-09	4.5176383966577e-08	Drug_Perturbations_from_GEO_down
+Heregulin 56310950 human GSE22288 sample 3215	25/300	1.84164076944391e-09	6.86778536938459e-08	Drug_Perturbations_from_GEO_down
+Lipopolysaccharide 11970143 human GSE3140 sample 3594	23/265	3.82163257332962e-09	1.368144461252e-07	Drug_Perturbations_from_GEO_down
+estradiol 5757 human GSE24592 sample 3346	22/257	1.07925380625891e-08	3.71512367923741e-07	Drug_Perturbations_from_GEO_down
+estradiol DB00783 human GSE24592 sample 2732	21/242	1.84309161781835e-08	6.10950739980526e-07	Drug_Perturbations_from_GEO_down
+vemurafenib DB08881 human GSE37441 sample 2563	26/363	2.04794199224348e-08	6.54610029663541e-07	Drug_Perturbations_from_GEO_down
+PLX4032 DB05238 human GSE24862 sample 2567	27/393	2.60406675375848e-08	8.03668877453048e-07	Drug_Perturbations_from_GEO_down
+PLX4032 DB05238 human GSE50649 sample 2557	25/355	5.35973832016209e-08	1.59898859884836e-06	Drug_Perturbations_from_GEO_down
+Carboplatin DB00958 human GSE13525 sample 3089	20/243	9.69078511295144e-08	2.7978234439005e-06	Drug_Perturbations_from_GEO_down
+PLX4032 DB05238 human GSE24862 sample 2570	26/393	1.00451900326356e-07	2.80951408725276e-06	Drug_Perturbations_from_GEO_down
+estradiol 5757 human GSE26834 sample 3241	21/268	1.07058173093946e-07	2.88205603046245e-06	Drug_Perturbations_from_GEO_down
+imatinib DB00619 human GSE22433 sample 2526	18/200	1.11496359282924e-07	2.88205603046245e-06	Drug_Perturbations_from_GEO_down
+estradiol 5757 human GSE12446 sample 3203	22/293	1.12706101749928e-07	2.88205603046245e-06	Drug_Perturbations_from_GEO_down
+BPDE 41322 human GSE19510 sample 3377	21/274	1.55608853584165e-07	3.86860899882854e-06	Drug_Perturbations_from_GEO_down
+Phosgene 6371 mouse GSE2565 sample 3612	22/301	1.80178430487585e-07	4.35837014287536e-06	Drug_Perturbations_from_GEO_down
+paclitaxel DB01229 human GSE19136 sample 2576	24/360	2.73372970991678e-07	6.43865286940927e-06	Drug_Perturbations_from_GEO_down
+doxycycline DB00254 human GSE2624 sample 3077	25/391	3.37816877076884e-07	7.75246423035412e-06	Drug_Perturbations_from_GEO_down
+Hydrogen Peroxide 784 mouse GSE3078 sample 3598	24/365	3.51383050993111e-07	7.86219576597085e-06	Drug_Perturbations_from_GEO_down

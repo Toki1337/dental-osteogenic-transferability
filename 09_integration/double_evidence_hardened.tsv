@@ -1,0 +1,2 @@
+gene	nsnp	method	b	se	pval	egger_int_p	label	padj	direction_signature	direction
+SRGN	2	IVW	-0.0216815508398589	0.00702458395613982	0.00202511222618734		eBMD	0.0155047654817468	up	up
