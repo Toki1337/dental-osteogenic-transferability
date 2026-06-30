@@ -12,7 +12,7 @@
 # AND p_localizes_more<0.05 in ALL validated scRNA atlases (conservative, replicated).
 #
 # Outputs: 10_transferability/transferability_summary.tsv
-#          figures/pub/Fig7_transferability.{png,pdf}
+#          figures/pub/Fig5_transferability.{png,pdf}   (Fig5 = first cited, §3.5)
 # ============================================================================
 .libPaths(c("F:/Rlib", .libPaths()))
 suppressWarnings(suppressMessages({ library(data.table); library(ggplot2); library(patchwork) }))
@@ -90,6 +90,6 @@ pB <- ggplot(sc, aes(TS, signature, fill=prov)) + geom_col() +
                      sum(pk$verdict=="transfers"), nrow(pk), sum(dd$verdict=="transfers"), nrow(dd), ft$p.value), 118),
        x="Transferability Score (z vs random null)", y=NULL) + th
 fig7 <- (pA / pB) + plot_layout(heights=c(1,1)) + plot_annotation(tag_levels="A")
-ggsave("figures/pub/Fig7_transferability.pdf", fig7, width=9.5, height=11)
-ggsave("figures/pub/Fig7_transferability.png", fig7, width=9.5, height=11, dpi=150)
-cat("\nwrote figures/pub/Fig7_transferability + 10_transferability/transferability_summary.tsv\n")
+ggsave("figures/pub/Fig5_transferability.pdf", fig7, width=9.5, height=11)   # numbered Fig5 (first cited, §3.5)
+ggsave("figures/pub/Fig5_transferability.png", fig7, width=9.5, height=11, dpi=150)
+cat("\nwrote figures/pub/Fig5_transferability + 10_transferability/transferability_summary.tsv\n")

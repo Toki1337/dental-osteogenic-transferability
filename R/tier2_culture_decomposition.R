@@ -7,7 +7,7 @@
 # milieu, which has no discrete in-vivo osteoprogenitor home.
 #
 # Outputs: 10_transferability/culture_decomposition.tsv
-#          figures/pub/Fig8_culture_confound.{png,pdf}
+#          figures/pub/Fig6_culture_confound.{png,pdf}   (Fig6 = cited §3.5, after Fig5)
 # ============================================================================
 .libPaths(c("F:/Rlib", .libPaths()))
 suppressWarnings(suppressMessages({
@@ -109,6 +109,6 @@ pB <- ggplot(em, aes(axis, signature, fill=nlp)) + geom_tile(color="white", line
        subtitle=wrap(sprintf("Hypergeometric enrichment per culture axis (* p<0.05). RRA-744 is enriched for hypoxia/serum/interferon; perturbation signatures for cell-cycle. Culture load alone does not predict transfer (Spearman rho=%.2f, ns); the data-driven panel is ~5%% canonical osteo-identity genes vs ~92%% for curated sets.", rho),78),
        x=NULL, y=NULL) + th + theme(axis.text.x=element_text(angle=25,hjust=1,size=8))
 fig8 <- (pA | pB) + plot_layout(widths=c(1,1)) + plot_annotation(tag_levels="A")
-ggsave("figures/pub/Fig8_culture_confound.pdf", fig8, width=12, height=6)
-ggsave("figures/pub/Fig8_culture_confound.png", fig8, width=12, height=6, dpi=150)
-cat("\nwrote 10_transferability/culture_decomposition.tsv + figures/pub/Fig8_culture_confound\n")
+ggsave("figures/pub/Fig6_culture_confound.pdf", fig8, width=12, height=6)   # numbered Fig6 (cited §3.5, after Fig5)
+ggsave("figures/pub/Fig6_culture_confound.png", fig8, width=12, height=6, dpi=150)
+cat("\nwrote 10_transferability/culture_decomposition.tsv + figures/pub/Fig6_culture_confound\n")

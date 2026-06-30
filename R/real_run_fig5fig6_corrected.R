@@ -26,8 +26,8 @@ p5 <- ggplot(top, aes(b, lab, color=role)) +
        subtitle=wrap("Recovers established bone genes (WNT16, KREMEN1, MGP, SMAD3, HSPG2) as positive controls; no protective direction implied",78),
        x="MR effect of higher expression on eBMD (beta)", y=NULL, size="-log10 FDR") + th +
   theme(legend.position="bottom")
-sv(p5 + plot_annotation(tag_levels="A"), "Fig5_MR.pdf", 8.5, 6.2)
-cat("Fig5 regenerated (lead-SNP MR; positive-control framing)\n")
+sv(p5 + plot_annotation(tag_levels="A"), "Fig7_MR.pdf", 8.5, 6.2)   # numbered Fig7 (cited in MR §3.6)
+cat("Fig7_MR regenerated (lead-SNP MR; positive-control framing)\n")
 
 ## ---- Fig6a: reverse-connectivity convergence of four open CMap methods ----
 # Computed directly from the released 08_cmap outputs (no hand-entered values):
@@ -78,5 +78,5 @@ p6 <- ggplot(pr, aes(priority_score, gene, fill=evidence_tier)) + geom_col() +
        subtitle=wrap("IGFBP5 leads on transcriptomic evidence. No robust genetic double-evidence: GREM2 lead-SNP signal is a pleiotropy artifact (Egger p=6e-11); SRGN weak/discordant (non-robust).",92),
        x="weighted priority score", y=NULL, fill="evidence tier") + th
 fig6 <- (pA / p6) + plot_layout(heights=c(0.85, 1.7)) + plot_annotation(tag_levels="A")
-sv(fig6, "Fig6_priority.pdf", 9, 10.5)
-cat("Fig6 regenerated (a: CMap 4-method convergence; b: integrated priority)\n")
+sv(fig6, "Fig8_priority.pdf", 9, 10.5)   # numbered Fig8 (cited in CMap/priority §3.7)
+cat("Fig8_priority regenerated (a: CMap 4-method convergence; b: integrated priority)\n")
