@@ -1,0 +1,15 @@
+signature	source_type	transferability_z_GSE269255_mouse_ORNJ	transferability_z_GSE295106_mouse_BRONJ	transferability_z_GSE303003_human_MRONJ	osteo_rank_GSE269255_mouse_ORNJ	osteo_rank_GSE295106_mouse_BRONJ	osteo_rank_GSE303003_human_MRONJ	p_localizes_more_GSE269255_mouse_ORNJ	p_localizes_more_GSE295106_mouse_BRONJ	p_localizes_more_GSE303003_human_MRONJ	localizes_GSE269255_mouse_ORNJ	localizes_GSE295106_mouse_BRONJ	localizes_GSE303003_human_MRONJ	TS	n_loc	verdict	lineage_rho	lineage_TS
+GO_ossification	literature_GO	3.336	6.829	5.001	1	1	1	5e-04	5e-04	5e-04	TRUE	TRUE	TRUE	5.05533333333333	3	transfers	-0.26	-0.975
+GO_osteoblast_differentiation	literature_GO	1.997	5.167	3.976	1	1	1	0.0155	5e-04	0.001	TRUE	TRUE	TRUE	3.71333333333333	3	transfers	-0.173	-0.277
+GO_biomineral_tissue_dev	literature_GO	2.295	5.051	3.01	1	1	1	0.0065	5e-04	0.003	TRUE	TRUE	TRUE	3.452	3	transfers	-0.659	-3.165
+GO_reg_bone_mineralization	literature_GO	2.122	3.59	2.794	1	1	1	0.0045	5e-04	0.004	TRUE	TRUE	TRUE	2.83533333333333	3	transfers	-0.555	-1.977
+POSctrl_osteo_markers	positive_control	1.759	2.147	2.325	1	1	1	0.001	5e-04	0.0185	TRUE	TRUE	TRUE	2.077	3	transfers	-0.277	-0.638
+DE_DFC_GSE49007	single_source_DE	1.896	1.574	2.037	1	1	1	0.008	0.0365	0.0125	TRUE	TRUE	TRUE	1.83566666666667	3	transfers	-0.052	-0.173
+DE_GSC_GSE226347	single_source_DE	1.927	0.97	0.733	1	1	2	0.008	0.222	0.239	TRUE	FALSE	FALSE	1.21	1	partial	0.312	0.976
+EX_SCAP_simvastatin_GSE286540	excluded_perturbation_DE	1.315	1.707	0.422	1	1	3	0.114	0.0185	0.347	FALSE	TRUE	FALSE	1.148	1	partial	0.017	0.023
+DE_PDLSC_GSE99958	single_source_DE	0.984	1.164	0.512	1	1	3	0.185	0.16	0.319	FALSE	FALSE	FALSE	0.886666666666667	0	does_not_transfer	-0.069	-0.194
+EX_DPSC_cannabidiol_GSE271641	excluded_perturbation_DE	0.911	0.139	0.8	1	5	2	0.224	0.452	0.22	FALSE	FALSE	FALSE	0.616666666666667	0	does_not_transfer	0.364	1.088
+RRA744_pan_dental	own_meta	0.329	0.189	-0.369	4	4	4	0.386	0.45	0.635	FALSE	FALSE	FALSE	0.0496666666666667	0	does_not_transfer	-0.139	-0.408
+DE_SHED_GSE266257	single_source_DE	0.899	0.534	-1.814	2	3	7	0.216	0.353	0.967	FALSE	FALSE	FALSE	-0.127	0	does_not_transfer	0.208	0.649
+DE_DPSC_GSE226347	single_source_DE	-0.556	-0.556	-1.48	5	6	7	0.677	0.662	0.932	FALSE	FALSE	FALSE	-0.864	0	does_not_transfer	-0.555	-1.719
+EX_PDLSC_CALD1kd_GSE236009	excluded_perturbation_DE	-1.406	-1.841	-1.26	7	8	6	0.904	0.999	0.88	FALSE	FALSE	FALSE	-1.50233333333333	0	does_not_transfer	0.035	0.117

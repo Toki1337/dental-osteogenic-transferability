@@ -1,0 +1,14 @@
+signature	source_type	organism	n_up	n_down	n_total	citation	notes
+RRA744_pan_dental	own_meta	human	350	394	744	this study (RRA across 5 dental sources, LOO-stable)	primary meta-signature under audit
+DE_PDLSC_GSE99958	single_source_DE	human	250	158	408	GSE99958 PDLSC osteo-vs-undiff	top<=250/dir by stat (sig padj<0.05,|lfc|>1 else top-|stat|)
+DE_DPSC_GSE226347	single_source_DE	human	21	20	41	GSE226347 DPSC growth-vs-osteo	top<=250/dir by stat (sig padj<0.05,|lfc|>1 else top-|stat|)
+DE_GSC_GSE226347	single_source_DE	human	20	20	40	GSE226347 GSC growth-vs-osteo (near-null)	top<=250/dir by stat (sig padj<0.05,|lfc|>1 else top-|stat|)
+DE_SHED_GSE266257	single_source_DE	human	250	250	500	GSE266257 SHED ctrl-vs-Pi	top<=250/dir by stat (sig padj<0.05,|lfc|>1 else top-|stat|)
+DE_DFC_GSE49007	single_source_DE	human	250	144	394	GSE49007 DFC ctrl-vs-diff	top<=250/dir by stat (sig padj<0.05,|lfc|>1 else top-|stat|)
+GO_osteoblast_differentiation	literature_GO	human	217	0	217	GO:0001649 osteoblast differentiation	prior-knowledge gene set (unsigned; treated as osteogenic up-program)
+GO_ossification	literature_GO	human	354	0	354	GO:0001503 ossification	prior-knowledge gene set (unsigned; treated as osteogenic up-program)
+GO_biomineral_tissue_dev	literature_GO	human	148	0	148	GO:0031214 biomineral tissue development	prior-knowledge gene set (unsigned; treated as osteogenic up-program)
+GO_reg_bone_mineralization	literature_GO	human	72	0	72	GO:0030500 regulation of bone mineralization	prior-knowledge gene set (unsigned; treated as osteogenic up-program)
+EX_SCAP_simvastatin_GSE286540	excluded_perturbation_DE	human	250	250	500	GSE286540 SCAP simvastatin-osteo (excluded)	re-mined from author DE table; treated(sim) vs control
+EX_DPSC_cannabidiol_GSE271641	excluded_perturbation_DE	human	20	20	40	GSE271641 DPSC CBD odonto/osteo (excluded)	FPKM limma, CBD vs control
+EX_PDLSC_CALD1kd_GSE236009	excluded_perturbation_DE	human	20	20	40	GSE236009 PDLSC CALD1-KD osteo (excluded)	FPKM limma, shCALD1 vs shNC

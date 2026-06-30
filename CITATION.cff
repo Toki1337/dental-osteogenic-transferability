@@ -16,7 +16,7 @@ authors:
     given-names: Wendi
     orcid: "https://orcid.org/0009-0008-2815-3726"
     affiliation: "Institute of Dentistry, I.M. Sechenov First Moscow State Medical University (Sechenov University), Moscow, Russia"
-repository-code: "https://github.com/Toki1337/dental-osteogenic-transferability-audit"
+repository-code: "https://github.com/Toki1337/dental-osteogenic-transferability"
 license: MIT
 keywords:
   - dental mesenchymal stem cells

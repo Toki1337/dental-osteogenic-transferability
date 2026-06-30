@@ -1,0 +1,15 @@
+atlas	signature	source_type	n_up_used	n_down_used	lineage_rho	transferability_z	p_rises_more	null_mean	null_sd
+GSE104473_mouse_lineage	RRA744_pan_dental	own_meta	308	357	-0.139	-0.408	0.658	-0.002	0.334
+GSE104473_mouse_lineage	DE_PDLSC_GSE99958	single_source_DE	201	129	-0.069	-0.194	0.582	-0.006	0.325
+GSE104473_mouse_lineage	DE_DPSC_GSE226347	single_source_DE	14	18	-0.555	-1.719	0.958	0	0.323
+GSE104473_mouse_lineage	DE_GSC_GSE226347	single_source_DE	10	12	0.312	0.976	0.198	-0.006	0.326
+GSE104473_mouse_lineage	DE_SHED_GSE266257	single_source_DE	212	214	0.208	0.649	0.29	-0.007	0.331
+GSE104473_mouse_lineage	DE_DFC_GSE49007	single_source_DE	225	120	-0.052	-0.173	0.573	0.005	0.327
+GSE104473_mouse_lineage	GO_osteoblast_differentiation	literature_GO	177	0	-0.173	-0.277	0.632	-0.132	0.151
+GSE104473_mouse_lineage	GO_ossification	literature_GO	304	0	-0.26	-0.975	0.85	-0.141	0.123
+GSE104473_mouse_lineage	GO_biomineral_tissue_dev	literature_GO	129	0	-0.659	-3.165	0.999	-0.141	0.164
+GSE104473_mouse_lineage	GO_reg_bone_mineralization	literature_GO	61	0	-0.555	-1.977	0.974	-0.139	0.21
+GSE104473_mouse_lineage	EX_SCAP_simvastatin_GSE286540	excluded_perturbation_DE	201	208	0.017	0.023	0.504	0.01	0.326
+GSE104473_mouse_lineage	EX_DPSC_cannabidiol_GSE271641	excluded_perturbation_DE	5	9	0.364	1.088	0.157	0.013	0.323
+GSE104473_mouse_lineage	EX_PDLSC_CALD1kd_GSE236009	excluded_perturbation_DE	14	16	0.035	0.117	0.47	-0.004	0.328
+GSE104473_mouse_lineage	POSctrl_osteo_markers	positive_control	9	0	-0.277	-0.638	0.744	-0.092	0.29

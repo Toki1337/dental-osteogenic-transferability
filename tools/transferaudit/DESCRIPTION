@@ -1,0 +1,20 @@
+Package: transferaudit
+Type: Package
+Title: In-Vivo Transferability Audit of Transcriptomic Signatures
+Version: 0.1.0
+Authors@R: person("Wendi", "Dou", email = "miya1337@mimoe.org",
+    role = c("aut", "cre"), comment = c(ORCID = "0009-0008-2815-3726"))
+Description: A small, dependency-light toolkit for auditing whether an in-vitro
+    (or otherwise derived) transcriptomic signature localises to its expected
+    cell compartment in single-cell reference atlases. It computes a calibrated
+    Transferability Score: the signature's compartment-localisation z-score
+    relative to a size-matched random-gene-set permutation null. Developed for a
+    dental mesenchymal-stromal-cell osteogenic program audited in human MRONJ and
+    mouse jaw atlases, but applicable to any signature x compartment x atlas.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports: Matrix, stats
+Suggests: knitr, rmarkdown, Seurat
+VignetteBuilder: knitr
+RoxygenNote: 7.3.1

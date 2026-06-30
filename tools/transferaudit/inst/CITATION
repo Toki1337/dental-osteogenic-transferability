@@ -1,0 +1,10 @@
+citHeader("To cite transferaudit in publications use:")
+
+bibentry(
+  bibtype  = "Manual",
+  title    = "transferaudit: In-Vivo Transferability Audit of Transcriptomic Signatures",
+  author   = person("Wendi", "Dou"),
+  year     = "2026",
+  note     = "R package version 0.1.0",
+  url      = "https://github.com/Toki1337/dental-osteogenic-transferability"
+)

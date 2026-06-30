@@ -27,8 +27,10 @@ pB <- ggplot(ptm, aes(reorder(compartment,-prop), 100*prop, fill=condition))+
   geom_col(position=position_dodge(width=.8), width=.7)+
   geom_text(aes(label=lab), position=position_dodge(width=.8), vjust=-0.3, size=2.6)+
   scale_fill_manual(values=c(Cyst="#4575b4", MRONJ="#d73027"), name=NULL)+
-  labs(title="Compartment proportions: osteoclast & myeloid expansion in MRONJ (4v4, p=0.029)",
-       x=NULL, y="% of cells")+th+theme(axis.text.x=element_text(angle=30,hjust=1,size=7), legend.position=c(.85,.8))
+  labs(title="Compartment proportions: osteoclast &\nmyeloid expansion in MRONJ (4v4, p=0.029)",
+       x=NULL, y="% of cells")+th+theme(axis.text.x=element_text(angle=30,hjust=1,size=7),
+       legend.position=c(.85,.8), plot.title=element_text(size=8.6,face="bold",lineheight=1.05),
+       plot.margin=margin(6,10,4,4))
 
 # C) program localization vs osteo-marker positive control (the key robustness panel)
 loc <- fread(file.path(OUT,"GSE303003_localization_robust.tsv"))

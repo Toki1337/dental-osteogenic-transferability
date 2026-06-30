@@ -1,0 +1,85 @@
+---
+title: "Auditing in-vivo transferability of a transcriptomic signature"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Auditing in-vivo transferability of a transcriptomic signature}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
+`transferaudit` asks whether a transcriptomic signature localises to its expected
+cell compartment in a single-cell reference atlas **more than a size-matched
+random gene set would**. This vignette uses a small simulated atlas so it runs
+anywhere, and shows the central contrast the package was built to expose:
+
+* a **prior-knowledge / identity** signature *localises* to its compartment;
+* a **culture / off-target** signature does *not*, even if both are "real" gene sets.
+
+```{r}
+library(transferaudit)
+set.seed(1337)
+
+## ---- simulate an atlas: 1500 cells across 5 compartments, 1200 genes --------
+comps   <- c("Mesenchymal_osteo", "Myeloid", "Tcell", "Endothelial", "Epithelial")
+ncell   <- 1500
+compart <- sample(comps, ncell, replace = TRUE)
+genes   <- paste0("G", seq_len(1200))
+
+# baseline log-normal expression
+expr <- matrix(rpois(length(genes) * ncell, lambda = 1), nrow = length(genes),
+               dimnames = list(genes, NULL))
+expr <- log1p(expr)
+
+# define two ground-truth programs of 40 genes each
+osteo_id   <- genes[1:40]      # marks the Mesenchymal_osteo compartment (identity)
+myeloid_pr <- genes[41:80]     # marks the Myeloid compartment (off-target for osteo)
+
+# inject identity signal: osteo_id high in osteoprogenitors, myeloid_pr high in myeloid
+expr[osteo_id,  compart == "Mesenchymal_osteo"] <-
+  expr[osteo_id,  compart == "Mesenchymal_osteo"] + 2
+expr[myeloid_pr, compart == "Myeloid"] <-
+  expr[myeloid_pr, compart == "Myeloid"] + 2
+```
+
+Build the genes × compartments matrix once:
+
+```{r}
+M <- build_compartment_matrix(expr, compart)
+dim(M)            # genes x 5 compartments
+```
+
+Score each program against the **osteoprogenitor** compartment:
+
+```{r}
+osteo_res <- transferability_score(M, up = osteo_id,   target = "Mesenchymal_osteo", n_perm = 1000)
+myelo_res <- transferability_score(M, up = myeloid_pr, target = "Mesenchymal_osteo", n_perm = 1000)
+
+c(osteo_transfer_z   = round(osteo_res$transferability_z, 2),
+  osteo_p_more       = signif(osteo_res$p_localizes_more, 3),
+  myeloid_transfer_z = round(myelo_res$transferability_z, 2),
+  myeloid_p_more     = signif(myelo_res$p_localizes_more, 3))
+```
+
+The osteoprogenitor-identity program sits far in the right tail of the random null
+(high transferability z, small p): it *transfers*. The myeloid program — equally
+"real", but marking a different compartment — does not localise to osteoprogenitors.
+
+Audit a whole panel in one call:
+
+```{r}
+panel <- list(
+  osteo_identity = list(up = osteo_id),
+  myeloid_offtgt = list(up = myeloid_pr),
+  random_set     = list(up = sample(genes, 40))
+)
+audit_panel(M, panel, target = "Mesenchymal_osteo", n_perm = 1000)
+```
+
+`transfers == TRUE` requires both that the target compartment ranks first and that
+`p_localizes_more < 0.05`. This is exactly the calibrated test used in the
+accompanying study to show that data-driven in-vitro osteogenic signatures fail to
+localise to in-vivo osteoprogenitors while prior-knowledge osteogenic gene sets do.

@@ -93,7 +93,10 @@ to_human_symbols <- function(genes, from = c("mouse", "human"), strict = FALSE) 
          "illustrative only — quantitative steps must call strict=TRUE)", level = "WARN")
     return(toupper(genes))
   }
-  ort <- babelgene::orthologs(genes = genes, species = "mouse", human = TRUE)
+  # NOTE: babelgene's `human` flag declares whether the INPUT genes are human.
+  # The input here is MOUSE, so human = FALSE (human = TRUE silently maps only the
+  # handful of mouse symbols that coincide with a human symbol, ~15 of ~23k).
+  ort <- babelgene::orthologs(genes = genes, species = "mouse", human = FALSE)
   ort <- ort[!is.na(ort$symbol) & !is.na(ort$human_symbol), , drop = FALSE]
   # Drop ambiguous mappings: keep only mouse symbols with exactly one distinct
   # human symbol (and human symbols claimed by exactly one mouse symbol). Among

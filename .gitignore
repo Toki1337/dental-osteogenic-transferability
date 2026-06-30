@@ -14,8 +14,9 @@
 07_mr_coloc/*
 08_cmap/*
 09_integration/*
-supp/sessionInfo.txt
 supp/*.tsv
+# supp/sessionInfo.txt is intentionally TRACKED (reproducibility record); do not ignore.
+!supp/sessionInfo.txt
 
 # ---- human-curated intermediates are kept; auto-template is regenerated ----
 01_curation/sample_arms_template.tsv

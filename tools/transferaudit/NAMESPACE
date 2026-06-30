@@ -1,0 +1,6 @@
+export(build_compartment_matrix)
+export(transferability_score)
+export(audit_panel)
+export(lineage_transferability)
+importFrom(Matrix, rowMeans)
+importFrom(stats, sd)
