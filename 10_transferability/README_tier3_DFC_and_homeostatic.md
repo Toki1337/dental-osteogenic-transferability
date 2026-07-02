@@ -52,6 +52,24 @@ the panel. Output: `invivo_localization_GSE316924_homeostatic.tsv`; run log
   signature but the positive control ranked the osteoprogenitor compartment strictly first
   in this atlas, the calibrated null-based Transferability z (not the rank-1 criterion) is the readout.
 
+## C — co-expression-preserving null (Major 3) — **COMPUTED** (`R/tier3_coexpr_null.R`)
+Recomputed every Transferability Score against an **expression-matched null** (null gene sets drawn to
+match each signature's per-gene mean-expression profile in 20 quantile bins → similar co-expression /
+score variance as the real signature), addressing the concern that the random-gene-set null under-estimates
+null variance and inflates |z|. Output: `invivo_localization_coexprnull.tsv`. Result:
+- The mild p-inflation of the random null is confirmed (e.g. positive-control human-MRONJ p 0.019 → 0.025;
+  GO_ossification ORNJ 5e-4 → 0.0015; DFC BRONJ 0.037 → 0.209) — but GO sets stay significant (p ≤ 0.036)
+  and data-driven stay non-significant.
+- **Split preserved and sharpened**: prior-knowledge **4/4**, data-driven **0/9** localising in all three
+  atlases (the lone random-null exception, DFC, drops out — it fails BRONJ under the matched null);
+  positive control still 3/3. RRA-744 still does not localise (z = −0.4 / −0.2 / +0.7).
+- ⇒ the qualitative conclusion does not depend on the random-null calibration.
+
+## D — AUCell cross-tool consistency (label-transfer item) — `R/tier3_aucell_check.R`
+Cross-checks the transferaudit per-compartment score against an independent scorer (AUCell rank-AUC),
+correlating per-compartment AUC with the M-based per-compartment score for every signature/atlas.
+Output: `aucell_consistency.tsv` (complements the in-paper AddModuleScore-vs-UCell ρ = 1.0 with a third method).
+
 ## Not done (deliberately — see triage)
 - GSE223778 (Mertk extraction-socket, bulk) — reintroduces compartment mixing; future-work mention only.
 - DRA006607 (maxilla/mandible/ilium positional) — expands a deliberately-minimised negative side-thread; content unverified.
