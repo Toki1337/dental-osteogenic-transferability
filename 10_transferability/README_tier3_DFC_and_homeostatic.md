@@ -52,11 +52,12 @@ the panel. Output: `invivo_localization_GSE316924_homeostatic.tsv`; run log
   signature but the positive control ranked the osteoprogenitor compartment strictly first
   in this atlas, the calibrated null-based Transferability z (not the rank-1 criterion) is the readout.
 
-## C — co-expression-preserving null (Major 3) — **COMPUTED** (`R/tier3_coexpr_null.R`)
+## C — expression-matched null (Major 3) — **COMPUTED** (`R/tier3_coexpr_null.R`)
 Recomputed every Transferability Score against an **expression-matched null** (null gene sets drawn to
-match each signature's per-gene mean-expression profile in 20 quantile bins → similar co-expression /
-score variance as the real signature), addressing the concern that the random-gene-set null under-estimates
-null variance and inflates |z|. Output: `invivo_localization_coexprnull.tsv`. Result:
+match each signature's per-gene mean-expression profile in 20 quantile bins). NB: this controls the
+**expression-level** component of the random-null's variance under-estimation; it matches the marginal
+expression distribution, NOT the joint gene–gene co-expression structure, so it bounds but does not fully
+remove the co-expression concern. Output: `invivo_localization_coexprnull.tsv`. Result:
 - The mild p-inflation of the random null is confirmed (e.g. positive-control human-MRONJ p 0.019 → 0.025;
   GO_ossification ORNJ 5e-4 → 0.0015; DFC BRONJ 0.037 → 0.209) — but GO sets stay significant (p ≤ 0.036)
   and data-driven stay non-significant.

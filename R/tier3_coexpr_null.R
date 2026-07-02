@@ -3,12 +3,14 @@
 # Reviewer (Major 3): the Transferability Score's size-matched RANDOM-gene-set null
 # ignores within-signature co-expression and can under-estimate the null variance,
 # inflating |z| / deflating p. Here we recompute the Transferability Score against an
-# EXPRESSION-MATCHED (co-expression-preserving) null: null gene sets are drawn to match
-# the signature's per-bin mean-expression profile (20 quantile bins) in each atlas, so
-# the null sets have similar expression level — and hence similar co-expression / score
-# variance — as the real signature. If the prior-knowledge-vs-data-driven split (GO/
-# markers localise, data-driven do not) survives this stricter null, the qualitative
-# conclusion does not depend on the random-null calibration.
+# EXPRESSION-MATCHED null: null gene sets are drawn to match the signature's per-bin
+# mean-expression profile (20 quantile bins) in each atlas, so the null sets have similar
+# expression level as the real signature. NB: this controls only the EXPRESSION-LEVEL
+# component of the random-null's variance under-estimation; it matches the marginal
+# expression distribution, NOT the joint gene-gene co-expression structure, so it bounds
+# but does not fully remove the co-expression concern. If the prior-knowledge-vs-data-driven
+# split (GO/markers localise, data-driven do not) survives this stricter null, the
+# qualitative conclusion does not depend on the random-null calibration.
 #
 # Reuses the exact M-matrix machinery of R/tier1_project_invivo.R. The observed osteo_rank
 # is null-independent (unchanged); only z and p change.
