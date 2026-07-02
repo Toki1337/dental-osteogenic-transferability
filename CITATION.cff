@@ -17,6 +17,14 @@ authors:
     orcid: "https://orcid.org/0009-0008-2815-3726"
     affiliation: "Institute of Dentistry, I.M. Sechenov First Moscow State Medical University (Sechenov University), Moscow, Russia"
 repository-code: "https://github.com/Toki1337/dental-osteogenic-transferability"
+doi: 10.5281/zenodo.21126641
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21126641
+    description: Concept DOI (resolves to the latest archived version)
+  - type: doi
+    value: 10.5281/zenodo.21126642
+    description: DOI for this archived version
 license: MIT
 keywords:
   - dental mesenchymal stem cells
