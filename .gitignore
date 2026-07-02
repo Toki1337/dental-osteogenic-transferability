@@ -108,3 +108,6 @@ audit/SELF_REVIEW_AND_FIXES.md
 # superseded figures (only figures/pub Fig1–6 are published)
 figures/legacy/
 figures/Fig1_framework.svg
+
+# journal submission package (contains the manuscript, kept out of the public repo)
+BMC_Oral_Health/
