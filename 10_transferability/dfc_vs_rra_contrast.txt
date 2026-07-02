@@ -1,0 +1,31 @@
+=== A1: DFC vs RRA-744 gene-content contrast ===
+DFC n=394 (up 250, down 144) | RRA-744 n=744 (up 350, down 394)
+DFC-RRA shared = 193  -> DFC-unique = 201  (49% of DFC shared with RRA)
+direction-concordant shared = 178; discordant = 15; DFC-RRA Jaccard = 0.204
+--- overlap with TRANSFERRING prior-knowledge sets ---
+DFC vs GO_osteoblast_diff: shared 9, Jaccard 0.015  |  RRA vs same: shared 26, Jaccard 0.028
+DFC vs GO_ossification:    shared 21, Jaccard 0.029  |  RRA vs same: shared 43, Jaccard 0.041
+
+=== culture-state / identity contrast ===
+metric	DFC	RRA-744
+frac_osteo_identity	0.0533	0.0578
+frac_culture_any	0.1117	0.1599
+frac_cell_cycle	0.0025	0.0161
+frac_serum_IEG	0.0508	0.0497
+frac_hypoxia	0.0431	0.0444
+frac_senescence	0.0152	0.0215
+frac_interferon	0.0279	0.0591
+TS	1.83566666666667	0.0496666666666667
+verdict	transfers	does_not_transfer
+
+=== across data-driven signatures (TS-sorted): culture vs identity ===
+signature	TS	cell_cycle	interferon	culture_any	osteo_id	verdict
+DE_DFC_GSE49007	1.84	0.0025	0.0279	0.1117	0.0533	transfers
+DE_GSC_GSE226347	1.21	0	0.025	0.025	0.05	partial
+EX_SCAP_simvastatin_GSE286540	1.15	0.1683	0.014	0.2405	0.0401	partial
+DE_PDLSC_GSE99958	0.89	0.0564	0.1103	0.2206	0.0441	does_not_transfer
+EX_DPSC_cannabidiol_GSE271641	0.62	0	0	0	0.025	does_not_transfer
+RRA744_pan_dental	0.05	0.0161	0.0591	0.1599	0.0578	does_not_transfer
+DE_SHED_GSE266257	-0.13	0.004	0.02	0.074	0.052	does_not_transfer
+DE_DPSC_GSE226347	-0.86	0	0	0.0732	0.0488	does_not_transfer
+EX_PDLSC_CALD1kd_GSE236009	-1.50	0	0	0.025	0.075	does_not_transfer

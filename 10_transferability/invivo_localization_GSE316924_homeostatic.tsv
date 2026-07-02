@@ -1,0 +1,15 @@
+atlas	signature	source_type	osteo_rank	transferability_z	p_localizes_more	localises
+GSE316924_mouse_mandible_homeostatic	RRA744_pan_dental	own_meta	2	1.068	0.164	FALSE
+GSE316924_mouse_mandible_homeostatic	DE_PDLSC_GSE99958	single_source_DE	2	0.825	0.226	FALSE
+GSE316924_mouse_mandible_homeostatic	DE_DPSC_GSE226347	single_source_DE	2	0.89	0.211	FALSE
+GSE316924_mouse_mandible_homeostatic	DE_GSC_GSE226347	single_source_DE	2	0.799	0.236	FALSE
+GSE316924_mouse_mandible_homeostatic	DE_SHED_GSE266257	single_source_DE	4	-1.932	0.978	FALSE
+GSE316924_mouse_mandible_homeostatic	DE_DFC_GSE49007	single_source_DE	2	0.664	0.261	FALSE
+GSE316924_mouse_mandible_homeostatic	GO_osteoblast_differentiation	literature_GO	3	1.768	0.0265	FALSE
+GSE316924_mouse_mandible_homeostatic	GO_ossification	literature_GO	3	4.79	5e-04	FALSE
+GSE316924_mouse_mandible_homeostatic	GO_biomineral_tissue_dev	literature_GO	2	7.066	5e-04	FALSE
+GSE316924_mouse_mandible_homeostatic	GO_reg_bone_mineralization	literature_GO	2	4.875	5e-04	FALSE
+GSE316924_mouse_mandible_homeostatic	EX_SCAP_simvastatin_GSE286540	excluded_perturbation_DE	2	0.678	0.268	FALSE
+GSE316924_mouse_mandible_homeostatic	EX_DPSC_cannabidiol_GSE271641	excluded_perturbation_DE	2	-0.006	0.502	FALSE
+GSE316924_mouse_mandible_homeostatic	EX_PDLSC_CALD1kd_GSE236009	excluded_perturbation_DE	4	-2.307	1	FALSE
+GSE316924_mouse_mandible_homeostatic	POSctrl_osteo_markers	positive_control	1	3.768	0.0095	TRUE

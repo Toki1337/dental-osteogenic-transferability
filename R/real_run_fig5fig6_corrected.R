@@ -48,10 +48,13 @@ cmap_cls <- list(
  "HDAC inhibitor"                   = c("vorinostat","trichostatin","entinostat","valproic","panobinostat",
                                         "belinostat","romidepsin","mocetinostat","SAHA","MS-275","\\bHDAC\\b"),
  "Steroid hormone\n(estradiol/prog.)"= c("estradiol","progesterone","estrone"))
+# signatureSearch: count MIMIC-direction hits only (trend=="up"); its dexamethasone and
+# HDAC (tubastatin-A) hits are REVERSERS (trend=="down") and must NOT count as convergence.
+m_ss_mimic <- if (nrow(m_ss) && "trend" %in% names(m_ss)) m_ss[trend=="up"] else m_ss[0]
 cmap_strs <- list("L1000CDS2"=as.character(m_l1000$drug),
                   "Enrichr/\nDSigDB"=as.character(m_dsig$Term),
                   "Enrichr/\nGEO"=as.character(m_geo$Term),
-                  "sigSearch-\nLINCS"=as.character(c(m_ss$pert, m_ss$MOAss)))
+                  "sigSearch-LINCS\n(mimic only)"=as.character(c(m_ss_mimic$pert, m_ss_mimic$MOAss)))
 cnt_cls <- function(s, kws){ s <- s[!is.na(s)]; if(!length(s)) return(0L)
   sum(sapply(kws, function(k) any(grepl(k, s, ignore.case=TRUE)))) }
 conv <- rbindlist(lapply(names(cmap_strs), function(meth)
@@ -64,8 +67,8 @@ pA <- ggplot(conv, aes(method, class, fill=n)) +
   geom_text(aes(label=ifelse(n>0, n, "·"), color=n>0), size=3.1, show.legend=FALSE) +
   scale_color_manual(values=c(`TRUE`="white", `FALSE`="grey65")) +
   scale_fill_gradient(low="grey93", high="#2166ac", name="agents\nrecovered") +
-  labs(title=wrap("Reverse-connectivity convergence of four open CMap methods",60),
-       subtitle=wrap("Dexamethasone (induction-medium agent) + glucocorticoids recovered by all four methods; HDAC inhibitors by three of four — a methodological positive-control/sanity check, not a repurposing discovery",100),
+  labs(title=wrap("Reverse-connectivity convergence of three open CMap methods (+ non-corroborating cross-check)",60),
+       subtitle=wrap("Dexamethasone (induction-medium agent) + glucocorticoids + HDAC inhibitors recovered by three methods (L1000CDS2, Enrichr/DSigDB, Enrichr/GEO); the offline-LINCS signatureSearch cross-check did NOT corroborate them as mimics (dexamethasone/HDAC appear only as reversers) — a positive-control/sanity check, not a repurposing discovery",110),
        x=NULL, y=NULL) + th +
   theme(axis.text.x=element_text(size=7.4), panel.grid=element_blank(), legend.position="right")
 
@@ -79,4 +82,4 @@ p6 <- ggplot(pr, aes(priority_score, gene, fill=evidence_tier)) + geom_col() +
        x="weighted priority score", y=NULL, fill="evidence tier") + th
 fig6 <- (pA / p6) + plot_layout(heights=c(0.85, 1.7)) + plot_annotation(tag_levels="A")
 sv(fig6, "Fig8_priority.pdf", 9, 10.5)   # numbered Fig8 (cited in CMap/priority §3.7)
-cat("Fig8_priority regenerated (a: CMap 4-method convergence; b: integrated priority)\n")
+cat("Fig8_priority regenerated (a: CMap 3-method convergence + non-corroborating sigSearch; b: integrated priority)\n")

@@ -46,10 +46,13 @@ jc <- readif("05_projection/jaw_position_context.tsv")
 tgt$jaw_context <- if(!is.null(jc)){ eff<-jc$abs_jaw_effect[match(tgt$gene,jc$gene)]; cons<-jc$jaw_weak_direction_consistent[match(tgt$gene,jc$gene)]
   eff[!(cons %in% c(TRUE,"TRUE"))]<-0; mm(eff) } else 0
 
-tgt$cmap_connectivity <- ifelse(tgt$n_drugs>0, 0.5, 0) + tgt$druggability*0.5   # drug-backed proxy
-
+# NOTE: the former "cmap_connectivity" dimension was a deterministic function of the DGIdb
+# drug count (ifelse(n_drugs>0,.5,0)+druggability*.5) and therefore double-counted the
+# druggability signal rather than encoding any L1000/Enrichr connectivity. It is removed and
+# the six remaining, genuinely distinct dimensions are re-normalised to sum to one.
 W <- c(rra_strength=0.20, failure_specific=0.20, scrna_support=0.10, mr_causal=0.25,
-       druggability=0.10, jaw_context=0.05, cmap_connectivity=0.10)
+       druggability=0.10, jaw_context=0.05)
+W <- W / sum(W)   # six dimensions, re-normalised (was seven with the redundant CMap dim)
 for(d in names(W)) tgt[[paste0("c_",d)]] <- W[[d]]*tgt[[d]]
 tgt$priority_score <- rowSums(tgt[,paste0("c_",names(W))])
 # Tier names deliberately avoid "causal": the MR is a systemic-eBMD sanity check whose
